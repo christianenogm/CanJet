@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Satisfaction Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/components.css">
+     <link rel="stylesheet" href="styles/charts.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>Customer Satisfaction Dashboard</h1>
+            <p>Analysis of airline customer satisfaction data</p>
+        </header>
+
+        <main class="dashboard-main">
+            <!-- Single Value Charts -->
+            <div class="chart-row">
+                <div class="chart-container single-value" id="chart7-loyal"></div>
+                <div class="chart-container single-value" id="chart8-distance"></div>
+                <div class="chart-container single-value" id="chart9-nodelay"></div>
+            </div>
+
+            <!-- Multi Value Charts -->
+            <div class="chart-row">
+                <div class="chart-container multi-value" id="chart1-distance"></div>
+                <div class="chart-container multi-value" id="chart2-proportion"></div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container multi-value" id="chart3-category"></div>
+                <div class="chart-container multi-value" id="chart4-delay"></div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-container multi-value" id="chart5-seatclass"></div>
+                <div class="chart-container multi-value" id="chart6-disloyal"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/dataService.js"></script>
+    <script src="scripts/chart1-distance.js"></script>
+    <script src="scripts/chart2-proportion.js"></script>
+    <script src="scripts/chart3-category.js"></script>
+    <script src="scripts/chart4-delay.js"></script>
+    <script src="scripts/chart5-seatclass.js"></script>
+    <script src="scripts/chart6-disloyal.js"></script>
+    <script src="scripts/chart7-loyal.js"></script>
+    <script src="scripts/chart8-distance.js"></script>
+    <script src="scripts/chart9-nodelay.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

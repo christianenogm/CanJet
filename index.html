@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard UI Pattern Library</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/chart-examples/logo.png" alt="Dashboard Logo" class="logo-img">
+                <h2 class="logo-text">Dashboard UI Pattern Library</h2>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#logo-usage">Logo Usage</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                    <li><a href="#data-viz">Data Visualization</a></li>
+                    <li><a href="#components">UI Components</a></li>
+                    <li><a href="dashboard.html">Dashboard CanJet</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        </section>
+        <section class="intro">
+            <h1>Data Dashboard Pattern Library</h1>
+            <p>This pattern library provides the design foundation for creating consistent and effective data
+                dashboards. All components follow established design principles for data visualization and user
+                interaction.</p>
+        </section>
+
+        <!-- Logo Usage -->
+        <section id="branding">
+            <h2>Logo Usage</h2>
+            <p>
+                The Can Jet logo is used in the navigation bar at a smaller size (55px).
+                Below is the original logo displayed larger for reference.
+            </p>
+            <img src="images/chart-examples/logo.png" alt="Can Jet logo" class="logo-large">
+        </section>
+
+        <!-- Color System -->
+        <section id="colors" class="section">
+            <h2>Color System</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-swatch primary-red"></div>
+                    <div class="color-info">
+                        <h4>Primary RED</h4>
+                        <p>#ED1C24</p>
+                        <p>Main brand color for primary actions</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-swatch secondary-blue"></div>
+                    <div class="color-info">
+                        <h4>Secondary Blue</h4>
+                        <p>#0066FF</p>
+                        <p>Secondary actions and highlights</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-swatch success-teal"></div>
+                    <div class="color-info">
+                        <h4>Success Teal</h4>
+                        <p>#00C389</p>
+                        <p>Positive indicators and growth metrics</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-swatch warning"></div>
+                    <div class="color-info">
+                        <h4>Warning Orange</h4>
+                        <p>#F7C137</p>
+                        <p>Warning states and attention needed</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-swatch error"></div>
+                    <div class="color-info">
+                        <h4>Error Red</h4>
+                        <p>#D63649</p>
+                        <p>Error states and critical alerts</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-swatch gray-1"></div>
+                    <div class="color-info">
+                        <h4>Dark Gray</h4>
+                        <p>#2E384D</p>
+                        <p>Primary text and headings</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-swatch gray-2"></div>
+                    <div class="color-info">
+                        <h4>Medium Gray</h4>
+                        <p>#8798AD</p>
+                        <p>Secondary text and labels</p>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-swatch gray-3"></div>
+                    <div class="color-info">
+                        <h4>Light Gray</h4>
+                        <p>#F4F6FC</p>
+                        <p>Backgrounds and subtle elements</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-example">
+                <h4>CSS Variables</h4>
+                <pre><code>:root {
+    --primary-red: #ED1C24;
+    --secondary-blue: #0066FF;
+    --success-teal: #00C389;
+    --warning-orange: #F7C137;
+    --error-red: #D63649;
+    --dark-gray: #2E384D;
+    --medium-gray: #8798AD;
+    --light-gray: #F4F6FC;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Typography -->
+        <section id="typography" class="section">
+            <h2>Typography</h2>
+            <div class="typography-scale">
+                <div class="type-item">
+                    <h1>Heading 1 - 32px</h1>
+                    <p>Used for main page titles and important headings</p>
+                </div>
+                <div class="type-item">
+                    <h2>Heading 2 - 24px</h2>
+                    <p>Used for section headings and secondary titles</p>
+                </div>
+                <div class="type-item">
+                    <h3>Heading 3 - 20px</h3>
+                    <p>Used for subsection headings and card titles</p>
+                </div>
+                <div class="type-item">
+                    <h4>Heading 4 - 16px</h4>
+                    <p>Used for small headings and labels</p>
+                </div>
+                <div class="type-item">
+                    <p class="body-large">Body Large - 16px</p>
+                    <p>Used for main body text and descriptions</p>
+                </div>
+                <div class="type-item">
+                    <p class="body-regular">Body Regular - 14px</p>
+                    <p>Standard body text for most content</p>
+                </div>
+                <div class="type-item">
+                    <p class="body-small">Body Small - 12px</p>
+                    <p>Used for captions, metadata, and small labels</p>
+                </div>
+                <div class="type-item">
+                    <p class="chart-text">Chart Text - Georgia, serif</p>
+                    <p>Special font for data visualization and chart labels</p>
+                </div>
+            </div>
+
+            <div class="code-example">
+                <h4>Typography CSS</h4>
+                <pre><code>h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--dark-gray);
+}
+
+.body-regular {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--medium-gray);
+}
+
+.chart-text {
+    font-family: Georgia, serif;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Layout System -->
+        <section id="layout" class="section">
+            <h2>Layout System</h2>
+            <div class="layout-examples">
+                <div class="layout-item">
+                    <h3>Grid System</h3>
+                    <p>12-column responsive grid for dashboard layout</p>
+                    <div class="grid-demo">
+                        <div class="grid-container">
+                            <div class="col-4">4 col</div>
+                            <div class="col-4">4 col</div>
+                            <div class="col-4">4 col</div>
+                        </div>
+                        <div class="grid-container">
+                            <div class="col-6">6 col</div>
+                            <div class="col-6">6 col</div>
+                        </div>
+                        <div class="grid-container">
+                            <div class="col-3">3 col</div>
+                            <div class="col-6">6 col</div>
+                            <div class="col-3">3 col</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="layout-item">
+                    <h3>Spacing Scale</h3>
+                    <p>Consistent spacing using 8px base unit</p>
+                    <div class="spacing-demo">
+                        <div class="space-8">8px</div>
+                        <div class="space-16">16px</div>
+                        <div class="space-24">24px</div>
+                        <div class="space-32">32px</div>
+                        <div class="space-48">48px</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code-example">
+                <h4>Grid CSS</h4>
+                <pre><code>.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.col-4 {
+    grid-column: span 4;
+    background: var(--light-gray);
+    padding: 16px;
+    border-radius: 4px;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Data Visualization -->
+        <section id="data-viz" class="section">
+            <h2>Data Visualization</h2>
+            <p class="section-description">Chart types and visualization patterns for effective data presentation.</p>
+
+            <div class="chart-grid">
+                <!-- Existing Multi-Value Charts -->
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <img src="images/chart-examples/line-chart.png" alt="Line Chart Example">
+                    </div>
+                    <div class="chart-info">
+                        <h3>Line Chart</h3>
+                        <p>Used to display trends over time. Shows continuous data points connected by straight line
+                            segments.</p>
+                        <ul>
+                            <li>Time-series data visualization</li>
+                            <li>Trend analysis</li>
+                            <li>Multiple series comparison</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <img src="images/chart-examples/bar-chart.png" alt="Bar Chart Example">
+                    </div>
+                    <div class="chart-info">
+                        <h3>Bar Chart</h3>
+                        <p>Compares categorical data using rectangular bars with lengths proportional to the values.</p>
+                        <ul>
+                            <li>Category comparison</li>
+                            <li>Vertical and horizontal variants</li>
+                            <li>Stacked and grouped options</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <img src="images/chart-examples/area-chart.png" alt="Area Chart Example">
+                    </div>
+                    <div class="chart-info">
+                        <h3>Area Chart</h3>
+                        <p>Similar to line charts but with the area below the line filled with color, emphasizing
+                            volume.</p>
+                        <ul>
+                            <li>Cumulative trends</li>
+                            <li>Part-to-whole relationships over time</li>
+                            <li>Stacked area for multiple categories</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <img src="images/chart-examples/scatter-plot.png" alt="Scatter Plot Example">
+                    </div>
+                    <div class="chart-info">
+                        <h3>Scatter Plot</h3>
+                        <p>Displays values for two variables as points, showing relationship or correlation between
+                            them.</p>
+                        <ul>
+                            <li>Correlation analysis</li>
+                            <li>Outlier detection</li>
+                            <li>Distribution patterns</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <img src="images/chart-examples/pie-chart.png" alt="Pie Chart Example">
+                    </div>
+                    <div class="chart-info">
+                        <h3>Pie Chart</h3>
+                        <p>Circular statistical graphic divided into slices to illustrate numerical proportion.</p>
+                        <ul>
+                            <li>Part-to-whole relationships</li>
+                            <li>Percentage distribution</li>
+                            <li>Limited to ~6 categories maximum</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <img src="images/chart-examples/donut-chart.png" alt="Donut Chart Example">
+                    </div>
+                    <div class="chart-info">
+                        <h3>Donut Chart</h3>
+                        <p>Variation of pie chart with empty center, allowing for additional information display.</p>
+                        <ul>
+                            <li>Cleaner visual than pie charts</li>
+                            <li>Center space for totals or labels</li>
+                            <li>Better for multiple small values</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Single Value Charts -->
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <div class="single-value-demo">
+                            <div class="kpi-card">
+                                <div class="kpi-header">
+                                    <h4>Total Revenue</h4>
+                                    <span class="kpi-trend positive">+12.5%</span>
+                                </div>
+                                <div class="kpi-value">$248,560</div>
+                                <div class="kpi-subtitle">Year to Date</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h3>KPI Card</h3>
+                        <p>Focus on high level metrics immediately with clear visual hierarchy.</p>
+                        <ul>
+                            <li>Large, prominent numbers</li>
+                            <li>Contextual labels and trends</li>
+                            <li>Quick performance assessment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <div class="single-value-demo">
+                            <div class="number-counter">
+                                <div class="counter-label">Active Users</div>
+                                <div class="counter-value" data-target="12487">12,487</div>
+                                <div class="counter-change">
+                                    <span class="change-indicator up">↑</span>
+                                    <span>+328 this week</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h3>Number Counter</h3>
+                        <p>Quickly draw attention to high level metrics with a movement signal.</p>
+                        <ul>
+                            <li>Animated number transitions</li>
+                            <li>Visual change indicators</li>
+                            <li>Real-time updates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="chart-item">
+                    <div class="chart-visual">
+                        <div class="single-value-demo">
+                            <div class="progress-card">
+                                <div class="progress-header">
+                                    <h4>Monthly Goal</h4>
+                                    <span class="progress-percent">78%</span>
+                                </div>
+                                <div class="progress-bar-container">
+                                    <div class="progress-bar" style="width: 78%"></div>
+                                </div>
+                                <div class="progress-stats">
+                                    <span>$39,000 / $50,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart-info">
+                        <h3>Progress Bar</h3>
+                        <p>Immediately draw attention to key metrics in relation to a goal.</p>
+                        <ul>
+                            <li>Visual progress indication</li>
+                            <li>Goal-oriented metrics</li>
+                            <li>Completion percentage</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- UI Components -->
+        <section id="components" class="section">
+            <h2>UI Components</h2>
+
+            <!-- Buttons -->
+            <div class="component-group">
+                <h3>Buttons</h3>
+                <div class="component-demo">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-outline">Outline Button</button>
+                    <button class="btn btn-danger">Danger Button</button>
+                    <button class="btn" disabled>Disabled Button</button>
+                </div>
+                <div class="code-example">
+                    <pre><code>&lt;button class="btn btn-primary"&gt;Primary Button&lt;/button&gt;
+                        &lt;button class="btn btn-secondary"&gt;Secondary Button&lt;/button&gt;
+                        &lt;button class="btn btn-outline"&gt;Outline Button&lt;/button&gt;</code>
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Form Controls -->
+            <div class="component-group">
+                <h3>Form Controls</h3>
+                <div class="component-demo">
+                    <div class="form-group">
+                        <label for="text-input">Text Input</label>
+                        <input type="text" id="text-input" placeholder="Enter text...">
+                    </div>
+                    <div class="form-group">
+                        <label for="dropdown">Dropdown Select</label>
+                        <select id="dropdown">
+                            <option value="">Select an option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                            Checkbox Option
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="radio">
+                            <input type="radio" name="radio-group">
+                            <span class="radiomark"></span>
+                            Radio Option 1
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="radio-group">
+                            <span class="radiomark"></span>
+                            Radio Option 2
+                        </label>
+                    </div>
+                </div>
+                <div class="code-example">
+                    <pre><code>&lt;div class="form-group"&gt;
+    &lt;label for="text-input"&gt;Text Input&lt;/label&gt;
+    &lt;input type="text" id="text-input" placeholder="Enter text..."&gt;
+&lt;/div&gt;
+
+&lt;label class="checkbox"&gt;
+    &lt;input type="checkbox"&gt;
+    &lt;span class="checkmark"&gt;&lt;/span&gt;
+    Checkbox Option
+&lt;/label&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Cards -->
+            <div class="component-group">
+                <h3>Cards</h3>
+                <div class="component-demo">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Chart Card</h4>
+                            <button class="btn-icon">⋮</button>
+                        </div>
+                        <div class="card-body">
+                            <p>Container for charts and data visualizations with header controls.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="code-example">
+                    <pre><code>&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;h4&gt;Chart Card&lt;/h4&gt;
+        &lt;button class="btn-icon"&gt;⋮&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p&gt;Card content...&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="component-group">
+                <h3>Navigation</h3>
+                <div class="component-demo">
+                    <nav class="sidebar-nav">
+                        <ul>
+                            <li class="nav-item active">
+                                <a href="#">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Analytics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Reports</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#">Settings</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="code-example">
+                    <pre><code>&lt;nav class="sidebar-nav"&gt;
+    &lt;ul&gt;
+        &lt;li class="nav-item active"&gt;
+            &lt;a href="#"&gt;Dashboard&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="nav-item"&gt;
+            &lt;a href="#"&gt;Analytics&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Tooltips -->
+            <div class="component-group">
+                <h3>Tooltips</h3>
+                <div class="component-demo">
+                    <button class="btn btn-primary tooltip-demo">
+                        Hover for Tooltip
+                        <span class="tooltip">This is a tooltip with additional information</span>
+                    </button>
+                </div>
+                <div class="code-example">
+                    <pre><code>&lt;button class="btn btn-primary tooltip-demo"&gt;
+    Hover for Tooltip
+    &lt;span class="tooltip"&gt;Tooltip content&lt;/span&gt;
+&lt;/button&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Loading States -->
+            <div class="component-group">
+                <h3>Loading States</h3>
+                <div class="component-demo">
+                    <div class="loading-spinner"></div>
+                    <div class="skeleton-loader">
+                        <div class="skeleton-line short"></div>
+                        <div class="skeleton-line medium"></div>
+                        <div class="skeleton-line long"></div>
+                    </div>
+                </div>
+                <div class="code-example">
+                    <pre><code>&lt;div class="loading-spinner"&gt;&lt;/div&gt;
+
+&lt;div class="skeleton-loader"&gt;
+    &lt;div class="skeleton-line short"&gt;&lt;/div&gt;
+    &lt;div class="skeleton-line medium"&gt;&lt;/div&gt;
+    &lt;div class="skeleton-line long"&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Dashboard UI Pattern Library &copy; 2025</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
