@@ -13,7 +13,7 @@ const Chart9NoDelay = (() => {
       .style("text-align", "left")
       .style("padding", "20px")
       .style("font-size", "16px")
-      .text("On-time flights");
+      .text("No delay");
 
     // Add the count
     container.append("h2")
@@ -25,7 +25,7 @@ const Chart9NoDelay = (() => {
     container.append("p")
       .style("color", "#2E384D") // Dark Gray - Pattern Library
       .style("font-size", "16px")
-      .text("customers without delays");
+      .text("customers");
   }
 
   return { init };
