@@ -2,6 +2,11 @@
 
 An interactive web project that combines a customer satisfaction analytics dashboard with a reusable UI pattern library.
 
+## Live Demo
+
+- [Open the CanJet Dashboard](https://christianenogm.github.io/CanJet/dashboard.html)
+- [Open the UI Pattern Library](https://christianenogm.github.io/CanJet/)
+
 ## Overview
 
 This repository includes:
